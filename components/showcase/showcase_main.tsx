@@ -3,7 +3,10 @@ import Card from "./card";
 import {
   faEnvelope,
   faGear,
+  faHeadset,
   faMessage,
+  faRobot,
+  faWrench,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Button from "../button/button";
@@ -30,16 +33,16 @@ export default function ShowcaseMain() {
           A a elementum amet maecenas t"
         />
         <Card
-          title="Frontend Solutions"
-          icon={faGear}
+          title="Backend Solutions"
+          icon={faWrench}
           text="Lorem iosum dolor sit amet consectetur.
           A a elementum amet maecenas t"
         />
-        <div className=" inset-shadow-[0_0_500px_120px_rgb(123,_77,_250,_1)] p-5 flex flex-col items-start justify-between row-span-2 rounded-2xl">
+        <div className="w-[75%] self-center h-full ml-10 inset-shadow-[0_0_400px_100px_rgb(123,_77,_250,_0.9)] p-5 flex flex-col items-start justify-between row-span-2 rounded-2xl">
           <div className="h-full flex flex-col items-start justify-between text-white">
             <FontAwesomeIcon icon={faMessage} className="size-5" />
-            <h1>Don't be shy, let's chat!</h1>
-            <p>
+            <h1 className="py-2 text-3xl font-extrabold">Don't be shy, let's chat!</h1>
+            <p className="pb-2 opacity-70 font-extrabold text-xs">
               Lorem ipsum dolor sit amet consectetur. A a elementum amet
               maccenas t
             </p>
@@ -47,29 +50,29 @@ export default function ShowcaseMain() {
               text="Book a call"
               color="text-black"
               background="bg-main"
-              paddingx="px-5"
+              paddingx="px-7"
               paddingy="py-2"
               className="w-full rounded-xl"
             />
           </div>
           <div className="w-full flex items-center justify-between text-white py-2 mt-5 border-t-[0.25px] border-main">
-            <FontAwesomeIcon icon={faEnvelope} className="size-5" />
+            <FontAwesomeIcon icon={faEnvelope} className="size-6" />
             <div>
-              <h4>Prefer to email?</h4>
-              <p>delyxa@company.com</p>
+              <h4 className="text-xs">Prefer to email?</h4>
+              <p className="text-xs opacity-70">delyxa@company.com</p>
             </div>
             <FontAwesomeIcon icon={faArrowRight} className="-rotate-45 text-accent rounded-full bg-main p-4 size-3" />
           </div>
         </div>
         <Card
-          title="Frontend Solutions"
-          icon={faGear}
+          title="Automation Solutions"
+          icon={faRobot}
           text="Lorem iosum dolor sit amet consectetur.
           A a elementum amet maecenas t"
         />
         <Card
-          title="Frontend Solutions"
-          icon={faGear}
+          title="Support Solutions"
+          icon={faHeadset}
           text="Lorem iosum dolor sit amet consectetur.
           A a elementum amet maecenas t"
         />
