@@ -1,0 +1,79 @@
+import React from "react";
+import Card from "./card";
+import {
+  faEnvelope,
+  faGear,
+  faMessage,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Button from "../button/button";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+
+export default function ShowcaseMain() {
+  return (
+    <div className="flex flex-col items-center justify-start p-15 gap-10 bg-[#FEFFFA] rounded-t-[4rem] shadow-[0_0_40px_10px_rgba(0,0,0,0.1)]">
+      <div className="flex flex-col items-center justify-start gap-5">
+        <div className="flex flex-row items-center">
+          <div className="h-6 w-6 rounded-full bg-[#D8DAD3] mr-2"></div>
+          <h1 className="text-black font-extrabold text-l">Delyxa</h1>
+        </div>
+        <h1 className="text-4xl font-extrabold text-center">
+          From beginning to end,
+          <br /> we handle it all
+        </h1>
+      </div>
+      <div className="grid grid-cols-3 gap-5 w-[80%]">
+        <Card
+          title="Frontend Solutions"
+          icon={faGear}
+          text="Lorem iosum dolor sit amet consectetur.
+          A a elementum amet maecenas t"
+        />
+        <Card
+          title="Frontend Solutions"
+          icon={faGear}
+          text="Lorem iosum dolor sit amet consectetur.
+          A a elementum amet maecenas t"
+        />
+        <div className=" inset-shadow-[0_0_500px_120px_rgb(123,_77,_250,_1)] p-5 flex flex-col items-start justify-between row-span-2 rounded-2xl">
+          <div className="h-full flex flex-col items-start justify-between text-white">
+            <FontAwesomeIcon icon={faMessage} className="size-5" />
+            <h1>Don't be shy, let's chat!</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. A a elementum amet
+              maccenas t
+            </p>
+            <Button
+              text="Book a call"
+              color="text-black"
+              background="bg-main"
+              paddingx="px-5"
+              paddingy="py-2"
+              className="w-full rounded-xl"
+            />
+          </div>
+          <div className="w-full flex items-center justify-between text-white py-2 mt-5 border-t-[0.25px] border-main">
+            <FontAwesomeIcon icon={faEnvelope} className="size-5" />
+            <div>
+              <h4>Prefer to email?</h4>
+              <p>delyxa@company.com</p>
+            </div>
+            <FontAwesomeIcon icon={faArrowRight} className="-rotate-45 text-accent rounded-full bg-main p-4 size-3" />
+          </div>
+        </div>
+        <Card
+          title="Frontend Solutions"
+          icon={faGear}
+          text="Lorem iosum dolor sit amet consectetur.
+          A a elementum amet maecenas t"
+        />
+        <Card
+          title="Frontend Solutions"
+          icon={faGear}
+          text="Lorem iosum dolor sit amet consectetur.
+          A a elementum amet maecenas t"
+        />
+      </div>
+    </div>
+  );
+}

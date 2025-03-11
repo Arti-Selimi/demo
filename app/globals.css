@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --shadow-main: 0 0 150px 50px rgba(124, 78, 250, 0.1);
+  --color-accent: #7C4DFA;
+  --color-main: #FAFCFA;
+  --color-gray-basic: #EFF2EF;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
