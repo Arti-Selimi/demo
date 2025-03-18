@@ -1,17 +1,16 @@
 import React from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
-type Props = { image: string; className?: string };
+type Props = { image: StaticImageData; className?: string };
 
 export default function Slide({ image, className }: Props) {
   return (
-    <div>
-      <Image
-        src={image}
-        alt="background"
-        layout="fill"
-        objectFit="cover"
-        className={`h-full w-full rounded-2xl ${className}`}
+    <div className={`relative w-full h-80 overflow-hidden rounded-[5px] ${className}`}>
+      <Image 
+        src={image} 
+        alt="slide" 
+        objectFit="cover" 
+        className="w-full h-full"
       />
     </div>
   );

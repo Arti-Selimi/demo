@@ -11,10 +11,11 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Button from "../button/button";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import SlidesMain from "../slideshow/SlidesMain";
 
 export default function ShowcaseMain() {
   return (
-    <div className="flex flex-col items-center justify-start p-15 gap-10 bg-[#FEFFFA] rounded-t-[4rem] shadow-[0_0_40px_10px_rgba(0,0,0,0.1)]">
+    <div className="flex flex-col items-center justify-start p-15 gap-10 bg-main rounded-t-[4rem] shadow-[0_-50px_40px_5px_rgba(0,0,0,0.1)]">
       <div className="flex flex-col items-center justify-start gap-5">
         <div className="flex flex-row items-center">
           <div className="h-6 w-6 rounded-full bg-[#D8DAD3] mr-2"></div>
